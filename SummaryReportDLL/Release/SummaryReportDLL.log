@@ -1,0 +1,52 @@
+﻿  stdafx.cpp
+  CSVReportFileDataOperator.cpp
+CSVReportFileDataOperator.cpp(56): warning C4018: '<' : signed/unsigned mismatch
+CSVReportFileDataOperator.cpp(59): warning C4018: '<' : signed/unsigned mismatch
+CSVReportFileDataOperator.cpp(79): warning C4101: 'e' : unreferenced local variable
+CSVReportFileDataOperator.cpp(91): warning C4101: 'e' : unreferenced local variable
+CSVReportFileDataOperator.cpp(101): warning C4101: 'e' : unreferenced local variable
+CSVReportFileDataOperator.cpp(111): warning C4101: 'e' : unreferenced local variable
+CSVReportFileDataOperator.cpp(121): warning C4101: 'e' : unreferenced local variable
+  dllmain.cpp
+  SummaryReportDLL.cpp
+SummaryReportDLL.cpp(53): warning C4101: 'pDir' : unreferenced local variable
+SummaryReportDLL.cpp(98): warning C4018: '<' : signed/unsigned mismatch
+SummaryReportDLL.cpp(536): error C2065: 'iFileLineCount' : undeclared identifier
+SummaryReportDLL.cpp(547): error C2065: 'FileData_Summary' : undeclared identifier
+SummaryReportDLL.cpp(547): error C2227: left of '->GetFieldDataFromLine' must point to class/struct/union/generic type
+          type is ''unknown-type''
+SummaryReportDLL.cpp(560): error C2065: 'strTestImageFilePath' : undeclared identifier
+SummaryReportDLL.cpp(560): error C2228: left of '.c_str' must have class/struct/union
+          type is ''unknown-type''
+SummaryReportDLL.cpp(564): error C2065: 'strTestImageFileBaseDir' : undeclared identifier
+SummaryReportDLL.cpp(566): error C2065: 'strTestImageFileBaseDir' : undeclared identifier
+SummaryReportDLL.cpp(566): error C2065: 'strTestImageFilePath' : undeclared identifier
+SummaryReportDLL.cpp(568): error C2065: 'strTestImageFileBaseDir' : undeclared identifier
+SummaryReportDLL.cpp(568): error C2065: 'strTestImageFilePath' : undeclared identifier
+SummaryReportDLL.cpp(569): error C2065: 'vctBarcodeResult' : undeclared identifier
+SummaryReportDLL.cpp(569): error C2228: left of '.push_back' must have class/struct/union
+          type is ''unknown-type''
+SummaryReportDLL.cpp(569): error C2065: 'iFieldIndex' : undeclared identifier
+SummaryReportDLL.cpp(572): error C2065: 'vctBarcodeResult' : undeclared identifier
+SummaryReportDLL.cpp(572): error C3861: 'GetCommonBarcodeResult': identifier not found
+SummaryReportDLL.cpp(600): warning C4018: '<' : signed/unsigned mismatch
+SummaryReportDLL.cpp(602): warning C4018: '<' : signed/unsigned mismatch
+SummaryReportDLL.cpp(624): error C2819: type 'std::vector<_Ty>' does not have an overloaded member 'operator ->'
+          with
+          [
+              _Ty=std::vector<std::string>
+          ]
+          did you intend to use '.' instead?
+SummaryReportDLL.cpp(624): error C2232: '->std::vector<_Ty>::size' : left operand has 'class' type, use '.'
+          with
+          [
+              _Ty=std::vector<std::string>
+          ]
+SummaryReportDLL.cpp(628): error C2065: 'strTestImageFilePath' : undeclared identifier
+SummaryReportDLL.cpp(628): error C2228: left of '.c_str' must have class/struct/union
+          type is ''unknown-type''
+SummaryReportDLL.cpp(632): error C2065: 'strTestImageFileBaseDir' : undeclared identifier
+SummaryReportDLL.cpp(634): error C2065: 'strTestImageFileBaseDir' : undeclared identifier
+SummaryReportDLL.cpp(634): error C2065: 'strTestImageFilePath' : undeclared identifier
+SummaryReportDLL.cpp(636): error C2065: 'strTestImageFileBaseDir' : undeclared identifier
+SummaryReportDLL.cpp(636): error C2065: 'strTestImageFilePath' : undeclared identifier

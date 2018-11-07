@@ -1,0 +1,15 @@
+﻿  stdafx.cpp
+  CSVReportFileDataOperator.cpp
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(56): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(59): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(79): warning C4101: “e”: 未引用的局部变量
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(91): warning C4101: “e”: 未引用的局部变量
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(101): warning C4101: “e”: 未引用的局部变量
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(111): warning C4101: “e”: 未引用的局部变量
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(121): warning C4101: “e”: 未引用的局部变量
+  SummaryReportDLL.cpp
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(53): warning C4101: “pDir”: 未引用的局部变量
+c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(98): warning C4018: “<”: 有符号/无符号不匹配
+  Entry.cpp
+  正在生成代码...
+  SummaryReport.vcxproj -> C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\Debug\SummaryReport.exe

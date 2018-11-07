@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  CSVReportFileDataOperator.cpp
+..\SummaryReportDLL\CSVReportFileDataOperator.cpp(56): warning C4018: '<' : signed/unsigned mismatch
+..\SummaryReportDLL\CSVReportFileDataOperator.cpp(59): warning C4018: '<' : signed/unsigned mismatch
+..\SummaryReportDLL\CSVReportFileDataOperator.cpp(79): warning C4101: 'e' : unreferenced local variable
+..\SummaryReportDLL\CSVReportFileDataOperator.cpp(91): warning C4101: 'e' : unreferenced local variable
+..\SummaryReportDLL\CSVReportFileDataOperator.cpp(101): warning C4101: 'e' : unreferenced local variable
+..\SummaryReportDLL\CSVReportFileDataOperator.cpp(111): warning C4101: 'e' : unreferenced local variable
+..\SummaryReportDLL\CSVReportFileDataOperator.cpp(121): warning C4101: 'e' : unreferenced local variable
+  SummaryReportDLL.cpp
+..\SummaryReportDLL\SummaryReportDLL.cpp(53): warning C4101: 'pDir' : unreferenced local variable
+..\SummaryReportDLL\SummaryReportDLL.cpp(98): warning C4018: '<' : signed/unsigned mismatch
+  Entry.cpp
+  Generating code
+  Finished generating code
+  SummaryReport.vcxproj -> D:\Working\SAW15Dev\DBR\Toolkits\Evaluation\Release\SummaryReport.exe
