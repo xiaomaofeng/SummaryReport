@@ -6,12 +6,13 @@
 #include <vector>
 #include <time.h>
 #include <conio.h>
+#include"CSVReportFileDataOperator.h"
 using namespace std;
 
 
-int GenerateSummary(vector<string> vctReportFiles, string strOutputDirectory);
-int GenerateSummary_DiffByTime(vector<string> strReportFiles, string strOutputDirectory, int iTimeOffset);
-int GenerateExpectedBarcodeResult(vector<string> vctReportFiles, string strOutputDirectory);
+//int GenerateSummary(vector<string> vctReportFiles, string strOutputDirectory);
+//int GenerateSummary_DiffByTime(vector<string> strReportFiles, string strOutputDirectory, int iTimeOffset);
+//int GenerateExpectedBarcodeResult(vector<string> vctReportFiles, string strOutputDirectory);
 void ShowConsoleCmd()
 {
 	std::cout << "*   I-Input csv report file (call multi times if multi files) " << std::endl;
@@ -23,6 +24,14 @@ void ShowConsoleCmd()
 
 int main(int argc, char* argv[])
 {
+	CSVReportFileDataOperator Main;
+	Main.Init();
+	if (Main.bInitNormal == false)
+	{
+		return -1;
+	}
+
+
 	string strOutputDirectory = ".\\";
 	vector<string> vctReportFiles;
 	int iTimeOffset = 0;
@@ -49,9 +58,9 @@ int main(int argc, char* argv[])
 			}
 		}
 		if (bByTime)
-			GenerateSummary_DiffByTime(vctReportFiles, strOutputDirectory, iTimeOffset);
+			Main.GenerateSummary_DiffByTime(vctReportFiles, strOutputDirectory, iTimeOffset);
 		else
-			GenerateSummary(vctReportFiles, strOutputDirectory);
+			Main.GenerateSummary(vctReportFiles, strOutputDirectory);
 			//GenerateExpectedBarcodeResult(vctReportFiles, strOutputDirectory);
 		std::cout << "Complete!" << std::endl;
 		return 0;
@@ -99,9 +108,9 @@ int main(int argc, char* argv[])
 		{
 			std::cout << "\n";
 			if (bByTime)
-				GenerateSummary_DiffByTime(vctReportFiles, strOutputDirectory, iTimeOffset);
+				Main.GenerateSummary_DiffByTime(vctReportFiles, strOutputDirectory, iTimeOffset);
 			else
-				GenerateSummary(vctReportFiles, strOutputDirectory);
+				Main.GenerateSummary(vctReportFiles, strOutputDirectory);
 			std::cout << "Complete!" << std::endl;
 			//_getche();
 			//memset(szBuffer, 0, sizeof(szBuffer));

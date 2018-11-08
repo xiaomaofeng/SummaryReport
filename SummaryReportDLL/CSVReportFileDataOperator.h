@@ -26,8 +26,17 @@ public:
 	~CSVReportFileDataOperator();
 private:
 	vector<vector<string>> m_vctFileData;
-
 public:
+	string Summary_AllCan;
+	string Summary_AllCannot;
+	string Summary_AnyoneCan;
+	string Summary_Diff;
+	bool bInitNormal;
+	void Init();
+	int GenerateSummary(vector<string> vctReportFiles, string strOutputDirectory);
+	void GenerateDiffSummary(CSVReportFileDataOperator* FileData_A, CSVReportFileDataOperator* FileData_B, CSVReportFileDataOperator* FileData_S);
+	void GenerateDiffSummary_ByTime(CSVReportFileDataOperator* FileData_A, CSVReportFileDataOperator* FileData_B, CSVReportFileDataOperator* FileData_S, int iTimeOffset);
+	int GenerateSummary_DiffByTime(vector<string> vctReportFiles, string strOutputDirectory, int iTimeOffset);
 	void LoadFileContentData(string strFilePath);
 	void SaveFileContentData(string strFilePath);
 	int GetLineCount();
@@ -37,6 +46,6 @@ public:
 	vector<string> GetLineData(int iLineIndex);
 	void SetLineData(int iLineIndex, vector<string> vctLineData);
 	void AppendLineData(vector<string> vctLineData);
-private:
+private:	
 };
 

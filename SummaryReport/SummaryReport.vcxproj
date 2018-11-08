@@ -84,7 +84,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -92,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/D _CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\SummaryReportDLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,12 +103,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/D _CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\SummaryReportDLL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,11 +148,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\SummaryReportDLL\CSVReportFileDataOperator.h" />
+    <ClInclude Include="..\SummaryReportDLL\logger\logger.h" />
+    <ClInclude Include="rapidjson\document.h" />
+    <ClInclude Include="rapidjson\istreamwrapper.h" />
+    <ClInclude Include="rapidjson\stringbuffer.h" />
+    <ClInclude Include="rapidjson\writer.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\SummaryReportDLL\CSVReportFileDataOperator.cpp" />
+    <ClCompile Include="..\SummaryReportDLL\logger\logger.cpp" />
     <ClCompile Include="..\SummaryReportDLL\SummaryReportDLL.cpp" />
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="stdafx.cpp">

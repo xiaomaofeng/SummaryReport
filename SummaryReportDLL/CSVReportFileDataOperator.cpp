@@ -4,6 +4,7 @@
 
 CSVReportFileDataOperator::CSVReportFileDataOperator()
 {
+	bInitNormal = true;
 }
 
 

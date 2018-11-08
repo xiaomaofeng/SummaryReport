@@ -13,12 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\rapidjson">
+      <UniqueIdentifier>{3d60bf73-d99b-48b5-8dee-74c8c31494c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\document.h">
+      <Filter>Header Files\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\istreamwrapper.h">
+      <Filter>Header Files\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\stringbuffer.h">
+      <Filter>Header Files\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\writer.h">
+      <Filter>Header Files\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SummaryReportDLL\logger\logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\SummaryReportDLL\CSVReportFileDataOperator.h">
@@ -36,6 +54,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\SummaryReportDLL\SummaryReportDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SummaryReportDLL\logger\logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
