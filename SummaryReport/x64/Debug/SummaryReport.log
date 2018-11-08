@@ -1,10 +1,43 @@
-﻿  SummaryReportDLL.cpp
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(23): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(506): note: 参见“localtime”的声明
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(30): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(55): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(53): warning C4101: “pDir”: 未引用的局部变量
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(80): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(215): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(471): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+﻿生成启动时间为 2018/11/8 16:42:37。
+     1>项目“C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\SummaryReport\SummaryReport.vcxproj”在节点 2 上(Build 个目标)。
+       项目文件包含 ToolsVersion="15.0"。此工具集可能未知或缺失。在这种情况下，通过安装 MSBuild 的正确版本，或许可以解决此问题。否则，该 build 可能已因策略原因而被强制为某个特定 ToolsVersion。将该项目视为其已具有 ToolsVersion="4.0"。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=291333。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\SummaryReport.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\SummaryReport.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt ..\SummaryReportDLL\CSVReportFileDataOperator.cpp ..\SummaryReportDLL\logger\logger.cpp ..\SummaryReportDLL\SummaryReportDLL.cpp Entry.cpp
+         Entry.cpp
+     1>Entry.cpp(9): fatal error C1083: 无法打开包括文件:“CSVReportFileDataOperator.h”: No such file or directory
+         SummaryReportDLL.cpp
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\rapidjson\reader.h(14): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+     1>..\SummaryReportDLL\SummaryReportDLL.cpp(35): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>..\SummaryReportDLL\SummaryReportDLL.cpp(67): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\SummaryReportDLL\SummaryReportDLL.cpp(92): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\SummaryReportDLL\SummaryReportDLL.cpp(227): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\SummaryReportDLL\SummaryReportDLL.cpp(492): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+         logger.cpp
+     1>..\SummaryReportDLL\logger\logger.cpp(2): warning C4627: “#include "logger.h"”: 在查找预编译头使用时跳过
+                 将指令添加到“stdafx.h”或重新生成预编译头
+     1>..\SummaryReportDLL\logger\logger.cpp(3): warning C4627: “#include <time.h>”: 在查找预编译头使用时跳过
+                 将指令添加到“stdafx.h”或重新生成预编译头
+     1>..\SummaryReportDLL\logger\logger.cpp(5): warning C4627: “#include <direct.h>”: 在查找预编译头使用时跳过
+                 将指令添加到“stdafx.h”或重新生成预编译头
+     1>..\SummaryReportDLL\logger\logger.cpp(6): warning C4627: “#include <vector>”: 在查找预编译头使用时跳过
+                 将指令添加到“stdafx.h”或重新生成预编译头
+     1>..\SummaryReportDLL\logger\logger.cpp(7): warning C4627: “#include <Dbghelp.h>”: 在查找预编译头使用时跳过
+                 将指令添加到“stdafx.h”或重新生成预编译头
+     1>..\SummaryReportDLL\logger\logger.cpp(273): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+         CSVReportFileDataOperator.cpp
+     1>..\SummaryReportDLL\CSVReportFileDataOperator.cpp(72): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\SummaryReportDLL\CSVReportFileDataOperator.cpp(78): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\SummaryReportDLL\CSVReportFileDataOperator.cpp(80): warning C4101: “e”: 未引用的局部变量
+     1>..\SummaryReportDLL\CSVReportFileDataOperator.cpp(92): warning C4101: “e”: 未引用的局部变量
+     1>..\SummaryReportDLL\CSVReportFileDataOperator.cpp(102): warning C4101: “e”: 未引用的局部变量
+     1>..\SummaryReportDLL\CSVReportFileDataOperator.cpp(112): warning C4101: “e”: 未引用的局部变量
+     1>..\SummaryReportDLL\CSVReportFileDataOperator.cpp(122): warning C4101: “e”: 未引用的局部变量
+         正在生成代码...
+     1>已完成生成项目“C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\SummaryReport\SummaryReport.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:08.75

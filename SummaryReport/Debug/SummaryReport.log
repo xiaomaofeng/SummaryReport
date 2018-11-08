@@ -1,8 +1,34 @@
-﻿  SummaryReportDLL.cpp
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\rapidjson\reader.h(14): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\logger\logger.h(56): warning C4091: “typedef ”: 没有声明变量时忽略“LOGGER::EnumLogLevel”的左侧
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(65): warning C4101: “pDir”: 未引用的局部变量
-c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(110): warning C4018: “<”: 有符号/无符号不匹配
-  Entry.cpp
-  正在生成代码...
-  SummaryReport.vcxproj -> C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\Debug\SummaryReport.exe
+﻿生成启动时间为 2018/11/8 16:43:09。
+     1>项目“C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\SummaryReport\SummaryReport.vcxproj”在节点 2 上(Build 个目标)。
+       项目文件包含 ToolsVersion="15.0"。此工具集可能未知或缺失。在这种情况下，通过安装 MSBuild 的正确版本，或许可以解决此问题。否则，该 build 可能已因策略原因而被强制为某个特定 ToolsVersion。将该项目视为其已具有 ToolsVersion="4.0"。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=291333。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\SummaryReportDLL /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\SummaryReport.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /D _CRT_SECURE_NO_WARNINGS stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\SummaryReportDLL /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /D _CRT_SECURE_NO_WARNINGS ..\SummaryReportDLL\CSVReportFileDataOperator.cpp ..\SummaryReportDLL\logger\logger.cpp ..\SummaryReportDLL\SummaryReportDLL.cpp Entry.cpp
+         Entry.cpp
+         SummaryReportDLL.cpp
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\rapidjson\reader.h(14): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(65): warning C4101: “pDir”: 未引用的局部变量
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\summaryreportdll.cpp(110): warning C4018: “<”: 有符号/无符号不匹配
+         logger.cpp
+         CSVReportFileDataOperator.cpp
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(57): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(60): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(80): warning C4101: “e”: 未引用的局部变量
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(92): warning C4101: “e”: 未引用的局部变量
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(102): warning C4101: “e”: 未引用的局部变量
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(112): warning C4101: “e”: 未引用的局部变量
+     1>c:\users\joe\desktop\summary\batchdecodeforevaluation\summaryreportdll\csvreportfiledataoperator.cpp(122): warning C4101: “e”: 未引用的局部变量
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\Debug\SummaryReport.exe" /INCREMENTAL /NOLOGO opencv_world300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\Debug\SummaryReport.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\Debug\SummaryReport.lib" /MACHINE:X86 Debug\CSVReportFileDataOperator.obj
+         Debug\logger.obj
+         Debug\SummaryReportDLL.obj
+         Debug\Entry.obj
+         Debug\stdafx.obj
+         SummaryReport.vcxproj -> C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\Debug\SummaryReport.exe
+     1>已完成生成项目“C:\Users\Joe\Desktop\SUMMARY\BatchDecodeForEvaluation\SummaryReport\SummaryReport.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:20.13
