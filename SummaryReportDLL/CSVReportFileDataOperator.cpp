@@ -12,6 +12,17 @@ CSVReportFileDataOperator::~CSVReportFileDataOperator()
 {
 	m_vctFileData.clear();
 }
+
+string CSVReportFileDataOperator::GetImageSource(string strOneCell)
+{
+		size_t temppos = strOneCell.find_last_of('\\');
+		string tempImageSource;
+		tempImageSource = strOneCell.substr(0, temppos);
+		size_t pos = tempImageSource.find_last_of('\\');
+		ImageSource = tempImageSource.substr(pos + 1, string::npos);
+		return ImageSource;
+}
+
 void CSVReportFileDataOperator::LoadFileContentData(string strFilePath)
 {
 	ifstream isFile(strFilePath, ios::binary);
@@ -21,18 +32,35 @@ void CSVReportFileDataOperator::LoadFileContentData(string strFilePath)
 		return;
 	}
 	string strOneLine;
+	int ilineIndex = 0;
+	bneedChangeSuffix = false;
+	bool bsummaryOrderIspositive = false;
+	bool bstartPush = false;
+	bool bstopPush = false;
 	while (getline(isFile, strOneLine))
 	{
+		int ioneCellIndex = 0;
+		ilineIndex += 1;
 		if ((strOneLine.length() != 0) &&
 			(strOneLine.at(strOneLine.length() - 1) == '\r' || strOneLine.at(strOneLine.length() - 1) == '\n'))
 			strOneLine = strOneLine.substr(0, strOneLine.length() - 1);
 		stringstream ssLine(strOneLine);
 		vector<string> vctLineData;
 		string strOneCell, strOnecomma;
-		bool bNeedCombine = false;
+		bool bNeedCombine = false;		
 		while (getline(ssLine, strOnecomma, ','))
 		{
-			strOneCell += strOnecomma;
+			
+			ioneCellIndex += 1;
+			bool bfirstGetline=false;
+			
+			if (m_vctFileData.size() == 0)
+			{
+				bfirstGetline = true;
+			}
+			
+			
+			strOneCell += strOnecomma;		
 			if (count(strOneCell.begin(), strOneCell.end(), '\"') % 2 == 1)
 			{
 				bNeedCombine = true;
@@ -40,14 +68,81 @@ void CSVReportFileDataOperator::LoadFileContentData(string strFilePath)
 			}
 			else
 				bNeedCombine = false;
-			if (bNeedCombine == false)
+			if (bfirstGetline)
 			{
-				vctLineData.push_back(strOneCell);
-				strOneCell = "";
+				if (strOneCell == "NO.")
+				{
+					bsummaryOrderIspositive = true;
+					bstartPush = true;
+				}
+			}
+			if (bsummaryOrderIspositive)
+			{
+				if (ilineIndex == 2)
+				{
+					if (ioneCellIndex == 2)
+					{
+						GetImageSource(strOneCell);
+						if (ImageSource == "201806_NoPDF_TIF_GIF")
+						{
+							bneedChangeSuffix = true;
+						}
+					}
+				}
+				if (strOneCell == "Total Image Count:")
+				{
+					bstopPush = true;
+				}
+			}
+			else
+			{
+				if (ilineIndex == 15)
+				{
+					if (ioneCellIndex == 2)
+					{
+						GetImageSource(strOneCell);
+						if (ImageSource == "201806_NoPDF_TIF_GIF")
+						{
+							bneedChangeSuffix = true;
+						}
+					}
+				}
+				if (strOneCell == "NO.")
+				{
+					bstartPush = true;
+				}
+		
+			}
+			if (bneedChangeSuffix)
+			{
+				size_t pos = 0;
+				pos = strOneCell.find_last_of('.');
+				if (pos != -1)
+				{
+					string suffix = strOneCell.substr(pos, string::npos);
+					if (suffix == ".jpg"|| suffix == ".JPG" || suffix == ".jpeg")
+					{
+						strOneCell = strOneCell.substr(0, pos) + ".png";
+					}
+				}
+			}
+			
+			if (bstartPush)
+			{
+				if (bNeedCombine == false)
+				{
+					if (!bstopPush)
+					{
+						vctLineData.push_back(strOneCell);
+						strOneCell = "";
+					}
+				}
 			}
 		}
-
-		m_vctFileData.push_back(vctLineData);
+		if (vctLineData.size() != 0)
+		{
+			m_vctFileData.push_back(vctLineData);
+		}
 	}
 	isFile.close();
 }

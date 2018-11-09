@@ -5,7 +5,7 @@
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LocalDebuggerCommandArguments>-i C:\Users\Joe\Desktop\Report\DBR_T_DecodeBuffer_OneD_20181008120616.csv -i C:\Users\Joe\Desktop\Report\DBR_T_DecodeBuffer_OneD_20181101214737.csv  -o C:\Users\Joe\Desktop\output</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-i C:\Users\Joe\Desktop\Report\2D-6.4.1\DBR_T_DecodeBuffer_OneD_20181107152820.csv -i C:\Users\Joe\Desktop\Report\2D-6.4.1\DBR_T_DecodeBuffer_OneD_20180930181126.csv -o C:\Users\Joe\Desktop\output</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

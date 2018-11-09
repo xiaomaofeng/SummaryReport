@@ -31,8 +31,11 @@ public:
 	string Summary_AllCannot;
 	string Summary_AnyoneCan;
 	string Summary_Diff;
+	string ImageSource;
 	bool bInitNormal;
+	bool bneedChangeSuffix;
 	void Init();
+	string GetImageSource(string strOneCell);
 	int GenerateSummary(vector<string> vctReportFiles, string strOutputDirectory);
 	void GenerateDiffSummary(CSVReportFileDataOperator* FileData_A, CSVReportFileDataOperator* FileData_B, CSVReportFileDataOperator* FileData_S);
 	void GenerateDiffSummary_ByTime(CSVReportFileDataOperator* FileData_A, CSVReportFileDataOperator* FileData_B, CSVReportFileDataOperator* FileData_S, int iTimeOffset);

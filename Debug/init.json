@@ -2,6 +2,6 @@
     "LightLog":"0",
     "Summary_AllCan":"false",
     "Summary_AllCannot":"false",
-    "Summary_AnyoneCan":"true",
+    "Summary_AnyoneCan":"false",
     "Summary_Diff":"true"
   }
